@@ -2,11 +2,11 @@ import json
 from HTMLParser import HTMLParser
 import re
 
-data = open('./scr/tweet_input/tweets.txt', 'r')
+data = open('./tweet_input/tweets.txt', 'r')
 lines = data.read().split('\n')
 i=0
 count=0
-saveFile = open('ft1.txt','a')
+saveFile = open('./tweet_output/ft1.txt','a')
 while i<(len(lines)-1):
 	#print lines[i]
 	data2 = json.loads(HTMLParser().unescape(lines[i]))
