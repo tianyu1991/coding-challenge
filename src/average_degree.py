@@ -2,9 +2,9 @@ from dateutil import parser
 import re
 import calendar
 
-data = open('ft1.txt', 'r')
+data = open('./tweet_output/ft1.txt', 'r')
 lines = data.read().split('\n')
-saveFile = open('ft2.txt','a')
+saveFile = open('./tweet_output/ft2.txt','a')
 i=0
 tags_dict={}
 tags_list=list()
