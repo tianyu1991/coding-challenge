@@ -2,7 +2,7 @@ import json
 from HTMLParser import HTMLParser
 import re
 
-data = open('ft5.txt', 'r')
+data = open('./scr/tweet_input/tweets.txt', 'r')
 lines = data.read().split('\n')
 i=0
 count=0
